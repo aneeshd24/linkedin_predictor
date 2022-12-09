@@ -99,7 +99,7 @@ class ml_model():
             "income": [new_list[0],new_list[0]],
             "educ2": [new_list[1],new_list[1]],
             "par": [new_list[2],new_list[2]],
-            "marital": [new_list[3],new_list[git stat3]],
+            "marital": [new_list[3],new_list[3]],
             "gender": [new_list[4], new_list[4]],
             "age": [new_list[5],new_list[5]],
         })
