@@ -4,7 +4,6 @@
 import pandas as pd
 import numpy as np
 import altair as alt
-import matplotlib.pyplot as plt 
 import streamlit as st 
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -41,31 +40,6 @@ class ml_model():
 
         ss = ss.dropna()
         ss
-
-        pd.crosstab(ss.educ2,ss.sm_li).plot(kind='bar')
-        plt.title('Exploration Graph')
-        plt.xlabel('Variable')
-        plt.ylabel('Frequency of LinkedIn Use')
-
-        pd.crosstab(ss.income,ss.sm_li).plot(kind='bar')
-        plt.title('Exploration Graph')
-        plt.xlabel('Variable')
-        plt.ylabel('Frequency of LinkedIn Use')
-
-        pd.crosstab(ss.par,ss.sm_li).plot(kind='bar')
-        plt.title('Exploration Graph')
-        plt.xlabel('Variable')
-        plt.ylabel('Frequency of LinkedIn Use')
-
-        pd.crosstab(ss.marital,ss.sm_li).plot(kind='bar')
-        plt.title('Exploration Graph')
-        plt.xlabel('Variable')
-        plt.ylabel('Frequency of LinkedIn Use')
-
-        pd.crosstab(ss.gender,ss.sm_li).plot(kind='bar')
-        plt.title('Exploration Graph')
-        plt.xlabel('Variable')
-        plt.ylabel('Frequency of LinkedIn Use')
 
         y = ss['sm_li']
         X = ss[['income', 'educ2', 'par', 'marital', 'gender', 'age']]
